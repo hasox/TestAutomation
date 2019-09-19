@@ -7,6 +7,8 @@ public class GitTest {
         System.out.println("2'nd commit");
         System.out.println("3'rd commit");
         System.out.println("4'th commit");
+        System.out.println("5'th commit from github");
+                          
     }
 
 }
