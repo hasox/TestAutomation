@@ -16,7 +16,9 @@ public class XpathPositiveFacebook {
         driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("password");
         Thread.sleep(2000);
 
-        driver.findElement(By.xpath("//input[contains(@id='ema')]")).clear();
+        driver.findElement(By.xpath("//input[contains(@id,'ema')]")).clear();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[text()='Forgot account?']")).click();
 
 
 
