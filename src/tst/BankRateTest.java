@@ -29,15 +29,15 @@ public class BankRateTest {
         Thread.sleep(3000);
         WebElement myElement4 = driver.findElement(By.cssSelector("span.numeral.--alpha"));
         String value = myElement4.getText();
+        System.out.println(value);
+
 
         value = value.replaceAll("\\D+","");
 
-        int number = Integer.parseInt(value);
+
+        float number = Float.parseFloat(value)/100;
 
         System.out.println(number);
-
-
-
 
 
 
