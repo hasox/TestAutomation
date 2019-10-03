@@ -1,5 +1,8 @@
 package tst;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class testBoard {
     public static void main(String[] args) {
 
@@ -9,5 +12,8 @@ public class testBoard {
         int number = Integer.parseInt(asd);
         System.out.println(number);
 
+
+        List<String> sss = new ArrayList<>();
+        ArrayList<String> sss2 = new ArrayList<>();
     }
 }
