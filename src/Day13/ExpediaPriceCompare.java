@@ -49,7 +49,8 @@ public class ExpediaPriceCompare {
         JavascriptExecutor scroll = (JavascriptExecutor) driver;
         scroll.executeScript("window.scrollBy(0,6000)","");
 
-        System.out.println(driver.findElements(By.xpath("/g/*[span]")).get(30).getText());
+        //System.out.println(driver.findElements(By.xpath("/g/*[span]")).get(30).getText());
+        System.out.println(driver.findElements(By.cssSelector("li span.medium-bold")).size());
        /* List <WebElement> test = driver.findElements(By.cssSelector("#flightModuleList [data-test-id='listing-price-dollars']"));
         System.out.println(test.size());
         int array[] = new int[test.size()];

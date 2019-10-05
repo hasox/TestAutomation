@@ -17,9 +17,21 @@ public class ExcelRead {
         FileInputStream fs = new FileInputStream(file);
         Workbook wb =new HSSFWorkbook(fs);
         Sheet sh = wb.getSheet("Sheet1");
-        Row rw = sh.getRow(0);
-        Cell cell = rw.getCell(0);
-        System.out.println(cell.getStringCellValue());
+        int rowCount = sh.getLastRowNum();
+        String arr[] = new String[rowCount];
+        Row rw;
+        Cell cell;
+
+        for(int i=0;i<rowCount;i++){
+            rw = sh.getRow(i);
+            cell = rw.getCell(0);
+            arr[i] = cell.getStringCellValue();
+            System.out.println(arr[i]);
+        }
+
+
+
+
 
 
     }
