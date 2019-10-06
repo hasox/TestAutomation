@@ -17,6 +17,7 @@ public class AmazonPricePull {
         System.out.println();
         System.out.println(driver.findElements(By.cssSelector(".sg-row .a-size-medium.a-color-base.a-text-normal")).size());
         int size =driver.findElements(By.cssSelector("[data-index] .a-price-whole")).size();
+        System.out.println(size);
         for(int i=0;i<size-5;i++) {
             System.out.println(driver.findElement(By.cssSelector("[data-index='" + i + "'] .a-price-whole")).getText());
         }
