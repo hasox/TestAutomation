@@ -1,4 +1,4 @@
-package tst;
+package TestCases;
 
 import java.util.ArrayList;
 import java.util.List;

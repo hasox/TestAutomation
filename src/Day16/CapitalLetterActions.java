@@ -3,9 +3,8 @@ package Day16;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import tst.Browsers;
+import TestCases.Browsers;
 
 import java.util.concurrent.TimeUnit;
 

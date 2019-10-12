@@ -1,12 +1,11 @@
 package Day17ApachePOI;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import tst.Browsers;
+import TestCases.Browsers;
 
 import java.io.*;
 

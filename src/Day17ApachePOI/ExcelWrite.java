@@ -10,10 +10,16 @@ public class ExcelWrite {
         File file = new File("C:\\work\\test.xls");
         FileInputStream fs = new FileInputStream(file);
         Workbook wb = new HSSFWorkbook(fs);
-        Sheet sh = wb.getSheetAt(1);
-        Row rw = sh.getRow(0);
-        Cell cell = rw.createCell(0, CellType.STRING);
-        cell.setCellValue("updated");
+        Sheet sh = wb.getSheet("TestSheet");
+
+
+
+        for(int i=-0;i<6;i++){
+            Row rw = sh.getRow(i);
+            Cell cell = rw.createCell(0, CellType.STRING);
+            cell.setCellValue("updated");
+        }
+
         fs.close();
         FileOutputStream fos = new FileOutputStream(file);
         wb.write(fos);

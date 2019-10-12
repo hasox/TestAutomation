@@ -1,7 +1,7 @@
 package Day15;
 
 import org.openqa.selenium.WebDriver;
-import tst.Browsers;
+import TestCases.Browsers;
 
 public class InvokeOpera {
 

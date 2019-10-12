@@ -1,9 +1,8 @@
 package Day14;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import tst.Browsers;
+import TestCases.Browsers;
 
 import java.util.concurrent.TimeUnit;
 

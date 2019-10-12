@@ -6,9 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import tst.Browsers;
-
-import java.util.concurrent.TimeUnit;
+import TestCases.Browsers;
 
 public class DragAndDropPractice {
     public static void main(String[] args) {

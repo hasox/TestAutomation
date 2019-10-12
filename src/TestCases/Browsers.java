@@ -1,4 +1,4 @@
-package tst;
+package TestCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,8 +13,22 @@ public class Browsers {
         DesiredCapabilities dc = DesiredCapabilities.chrome();
         //dc.acceptInsecureCerts();
         dc.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+
         ChromeOptions co = new ChromeOptions();
         co.merge(dc);
+        System.setProperty("webdriver.chrome.driver","C:\\work\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver(co);
+        return driver;
+    }
+
+    public static WebDriver invokeChromeHeadless(){
+        DesiredCapabilities dc = DesiredCapabilities.chrome();
+        //dc.acceptInsecureCerts();
+        dc.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+
+        ChromeOptions co = new ChromeOptions();
+        co.merge(dc);
+        co.addArguments("--headless","--disable-gpu","--user-agent");
         System.setProperty("webdriver.chrome.driver","C:\\work\\chromedriver.exe");
         WebDriver driver = new ChromeDriver(co);
         return driver;
