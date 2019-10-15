@@ -28,7 +28,7 @@ public class Browsers {
 
         ChromeOptions co = new ChromeOptions();
         co.merge(dc);
-        co.addArguments("--headless","--disable-gpu","--user-agent");
+        co.addArguments("--headless","--disable-gpu","--user-agent","--start-maximized");
         System.setProperty("webdriver.chrome.driver","C:\\work\\chromedriver.exe");
         WebDriver driver = new ChromeDriver(co);
         return driver;
